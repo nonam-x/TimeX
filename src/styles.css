@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+@theme {
+  --sky-primary: #4DAAEC;
+  --sky-light: #E8F4FC;
+  --sky-dark: #2B7AB8;
+  --slate-primary: #838591;
+  --slate-dark: #6B6D78;
+  --gray-primary: #2C2D33;
+}
+
+.sidebar-fixed {
+  @apply fixed left-0 top-0 h-screen w-64 overflow-y-auto;
+}
+
+.dashboard-area {
+  @apply ml-64 w-full h-screen overflow-y-auto;
+}
+
+.sidebar-fixed2 {
+  @apply fixed left-0 top-0 h-screen w-64 overflow-y-auto;
+}
+
+.dashboard-area2 {
+  @apply ml-64 w-[calc(100%-16rem)] h-screen overflow-y-auto;
+}
+
+/* errror csss */
+
+.hero-gradient {
+  background: linear-gradient(
+    135deg,
+    rgba(77, 170, 236, 0.1) 0%,
+    rgba(255, 255, 255, 0.95) 100%
+  );
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.btn-primary {
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(77, 170, 236, 0.35);
+}
+
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.nav-shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}

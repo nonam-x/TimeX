@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HRMS Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .glass {
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-[#F3F5F9] min-h-screen flex">
+
+
+
+  <!-- Main -->
+  <main class="flex-1 px-10 py-8">
+
+    <!-- Top Header -->
+    <header class="flex justify-between items-center mb-10">
+      <h2 class="text-4xl font-semibold text-[#0B2440]">Dashboard Overview</h2>
+
+      <div class="flex items-center gap-6">
+        <button class="relative">
+          <svg class="w-7 h-7 text-gray-600" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path d="M15 17h5l-1.405-1.405M19 11A8 8 0 1 0 3 11a8 8 0 0 0 16 0z"/>
+          </svg>
+          <span class="absolute top-0 right-0 w-2.5 h-2.5 rounded-full bg-red-500"></span>
+        </button>
+
+        <div class="flex items-center gap-3 cursor-pointer">
+          <div class="w-11 h-11 bg-[#1F6FEB] rounded-full grid place-items-center text-white font-medium">
+            AP
+          </div>
+          <div>
+            <p class="text-sm font-semibold text-gray-800">Ramu</p>
+            <p class="text-xs text-gray-500">HR Manager</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Summary Cards -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+
+      <div class="glass p-7 rounded-3xl shadow-md">
+        <p class="text-gray-500 text-sm">Attendance Rate</p>
+        <p class="text-3xl font-semibold text-[#0B2440] mt-1">96%</p>
+        <p class="text-xs mt-4 text-gray-400">Monthly Employee Stability Indicator</p>
+      </div>
+
+      <div routerLink="/leave" class="glass p-7 rounded-3xl shadow-md">
+        <p class="text-gray-500 text-sm">Leave Balance</p>
+        <p class="text-3xl font-semibold text-[#16A34A] mt-1">8 days</p>
+        <p class="text-xs mt-4 text-gray-400">Supports Work-Life Wellness</p>
+      </div>
+
+      <div class="glass p-7 rounded-3xl shadow-md">
+        <p class="text-gray-500 text-sm">Next Payroll</p>
+        <p class="text-3xl font-semibold text-[#1F6FEB] mt-1">₹45,000</p>
+        <p class="text-xs mt-4 text-gray-400">Upcoming Salary Cycle</p>
+      </div>
+
+      <div class="glass p-7 rounded-3xl shadow-md">
+        <p class="text-gray-500 text-sm">Pending Approvals</p>
+        <p class="text-3xl font-semibold text-[#F59E0B] mt-1">3</p>
+        <p class="text-xs mt-4 text-gray-400">Leave + Reimbursement Requests</p>
+      </div>
+
+    </section>
+
+    <!-- Charts + Recruitment -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+      <div class="glass rounded-3xl p-8 shadow-md">
+        <h3 class="text-xl font-semibold text-[#0B2440] mb-4">Performance Trend</h3>
+        <svg class="w-full h-48" viewBox="0 0 200 80">
+          <polyline fill="none" stroke="#1F6FEB" stroke-width="4"
+            points="0,60 30,50 60,45 90,40 120,42 150,35 180,38 200,30"/>
+        </svg>
+        <p class="text-xs text-gray-500 mt-2">Quarterly KPI Score Projection</p>
+      </div>
+
+      <div class="glass rounded-3xl p-8 shadow-md">
+        <h3 class="text-xl font-semibold text-[#0B2440] mb-4">Recruitment Pipeline</h3>
+
+        <div class="space-y-4 text-gray-800 text-sm">
+          <div class="flex justify-between"><span>Applicants</span> <span>120</span></div>
+          <div class="flex justify-between"><span>Screening</span> <span>45</span></div>
+          <div class="flex justify-between"><span>Interviews</span> <span>20</span></div>
+          <div class="flex justify-between font-semibold text-green-600"><span>Selected</span> <span>8</span></div>
+        </div>
+
+        <button class="mt-6 text-[#1F6FEB] hover:underline text-sm">Open Recruitment Module</button>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
