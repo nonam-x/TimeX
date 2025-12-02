@@ -1,0 +1,106 @@
+
+
+<body class="bg-gray-100 min-h-screen p-8 font-sans ">
+
+  <div class="bg-gray-100 h-full p-8 font-sans w-full scroll-smooth ">
+
+    <!-- Header -->
+    <div class="mb-10">
+      <h1 class="text-3xl font-semibold text-gray-800">Employee Onboarding</h1>
+      <p class="text-gray-500 text-sm mt-1">A welcoming and structured start for every new hire.</p>
+    </div>
+
+    <!-- Welcome Card -->
+    <div class="bg-white shadow-xl rounded-3xl p-8 mb-10 border border-gray-100">
+      <h2 class="text-2xl font-semibold text-gray-800">Welcome to the Team</h2>
+      <p class="text-gray-500 mt-2 text-sm leading-relaxed">
+        This onboarding flow ensures a smooth transition for new employees with clean navigation,
+        calm visuals, and guided steps.
+      </p>
+    </div>
+
+    <!-- Progress Steps -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+
+      <div class="bg-white rounded-3xl p-6 shadow-md border border-gray-100">
+        <p class="text-blue-600 font-medium text-sm">Step 1</p>
+        <h3 class="text-lg font-semibold text-gray-800 mt-2">Personal Info</h3>
+        <p class="text-gray-500 text-xs mt-1">Basic details to begin onboarding.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 shadow-md border border-gray-100">
+        <p class="text-blue-600 font-medium text-sm">Step 2</p>
+        <h3 class="text-lg font-semibold text-gray-800 mt-2">Documents Upload</h3>
+        <p class="text-gray-500 text-xs mt-1">Aadhaar, PAN, certificates.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 shadow-md border border-gray-100">
+        <p class="text-blue-600 font-medium text-sm">Step 3</p>
+        <h3 class="text-lg font-semibold text-gray-800 mt-2">Company Policies</h3>
+        <p class="text-gray-500 text-xs mt-1">Read & digitally sign agreements.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 shadow-md border border-gray-100">
+        <p class="text-blue-600 font-medium text-sm">Step 4</p>
+        <h3 class="text-lg font-semibold text-gray-800 mt-2">Final Review</h3>
+        <p class="text-gray-500 text-xs mt-1">Confirm and submit to HR.</p>
+      </div>
+
+    </div>
+
+    <!-- Onboarding Form -->
+    <div class="bg-white shadow-xl rounded-3xl p-10 border border-gray-100">
+
+      <h2 class="text-xl font-semibold text-gray-800 mb-6">Onboarding Details</h2>
+
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <div>
+          <label class="text-gray-600 text-sm">Employee Name</label>
+          <input type="text" placeholder="Enter name"
+            class="w-full mt-2 px-4 py-3 bg-gray-50 border border-gray-200 rounded-2xl shadow-sm focus:ring-2 focus:ring-blue-400 outline-none">
+        </div>
+
+        <div>
+          <label class="text-gray-600 text-sm">Employee ID</label>
+          <input type="text" placeholder="ID (auto-generated)"
+            class="w-full mt-2 px-4 py-3 bg-gray-50 border border-gray-200 rounded-2xl shadow-sm focus:ring-2 focus:ring-blue-400 outline-none">
+        </div>
+
+        <div>
+          <label class="text-gray-600 text-sm">Joining Date</label>
+          <input type="date"
+            class="w-full mt-2 px-4 py-3 bg-gray-50 border border-gray-200 rounded-2xl shadow-sm focus:ring-2 focus:ring-blue-400 outline-none">
+        </div>
+
+        <div>
+          <label class="text-gray-600 text-sm">Department</label>
+          <select
+            class="w-full mt-2 px-4 py-3 bg-gray-50 border border-gray-200 rounded-2xl shadow-sm focus:ring-2 focus:ring-blue-400 outline-none">
+            <option>Select department</option>
+            <option>HR</option>
+            <option>Finance</option>
+            <option>IT</option>
+            <option>Admin</option>
+          </select>
+        </div>
+
+        <div class="md:col-span-2">
+          <label class="text-gray-600 text-sm">Upload Documents</label>
+          <input type="file"
+            class="w-full mt-2 px-4 py-3 bg-gray-50 border border-gray-200 rounded-2xl shadow-sm focus:ring-2 focus:ring-blue-400 outline-none">
+        </div>
+
+      </form>
+
+      <button
+        class="mt-10 w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-2xl shadow-md font-medium transition">
+        Complete Onboarding
+      </button>
+
+    </div>
+
+  </div>
+
+</body>
+

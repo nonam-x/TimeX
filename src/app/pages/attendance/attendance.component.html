@@ -1,0 +1,103 @@
+
+<body class=" bg-gray-100 h-full p-8 font-sans w-full">
+
+  <div class="bg-gray-100 h-full p-8 font-sans w-full">
+
+    <!-- Header -->
+    <div class="mb-10">
+      <h1 class="text-3xl font-semibold text-gray-800">Attendance Overview</h1>
+      <p class="text-gray-500 text-sm mt-1">Calm and structured design to keep attendance tracking effortless.</p>
+    </div>
+
+    <!-- Summary Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+
+      <div class="bg-white shadow-md rounded-3xl p-6 border border-gray-100">
+        <p class="text-gray-500 text-sm">Today’s Status</p>
+        <h2 class="text-2xl font-semibold text-gray-800 mt-2">Present</h2>
+      </div>
+
+      <div class="bg-white shadow-md rounded-3xl p-6 border border-gray-100">
+        <p class="text-gray-500 text-sm">Total Days</p>
+        <h2 class="text-2xl font-semibold text-gray-800 mt-2">26</h2>
+      </div>
+
+      <div class="bg-white shadow-md rounded-3xl p-6 border border-gray-100">
+        <p class="text-gray-500 text-sm">Absent</p>
+        <h2 class="text-2xl font-semibold text-gray-800 mt-2">02</h2>
+      </div>
+
+      <div class="bg-white shadow-md rounded-3xl p-6 border border-gray-100">
+        <p class="text-gray-500 text-sm">Late Marks</p>
+        <h2 class="text-2xl font-semibold text-gray-800 mt-2">01</h2>
+      </div>
+
+    </div>
+
+    <!-- Attendance Table -->
+    <div class="bg-white shadow-xl rounded-3xl p-8 border border-gray-100">
+
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-xl font-semibold text-gray-800">Monthly Attendance</h2>
+
+        <select class="px-4 py-3 rounded-2xl bg-gray-50 border border-gray-200 shadow-sm outline-none focus:border-blue-500">
+          <option>January 2025</option>
+          <option>February 2025</option>
+          <option>March 2025</option>
+        </select>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="min-w-full text-left border-collapse">
+
+          <thead>
+            <tr class="text-gray-600 text-sm bg-gray-50">
+              <th class="py-4 px-4">Date</th>
+              <th class="py-4 px-4">Day</th>
+              <th class="py-4 px-4">In Time</th>
+              <th class="py-4 px-4">Out Time</th>
+              <th class="py-4 px-4">Status</th>
+              <th class="py-4 px-4">Working Hours</th>
+            </tr>
+          </thead>
+
+          <tbody class="text-gray-700">
+
+            <tr class="border-t border-gray-100 hover:bg-gray-50">
+              <td class="py-4 px-4">02 Jan 2025</td>
+              <td class="py-4 px-4">Thu</td>
+              <td class="py-4 px-4">09:32 AM</td>
+              <td class="py-4 px-4">06:45 PM</td>
+              <td class="py-4 px-4 text-green-600 font-medium">Present</td>
+              <td class="py-4 px-4">9h 13m</td>
+            </tr>
+
+            <tr class="border-t border-gray-100 hover:bg-gray-50">
+              <td class="py-4 px-4">03 Jan 2025</td>
+              <td class="py-4 px-4">Fri</td>
+              <td class="py-4 px-4">10:10 AM</td>
+              <td class="py-4 px-4">06:25 PM</td>
+              <td class="py-4 px-4 text-yellow-600 font-medium">Late</td>
+              <td class="py-4 px-4">8h 15m</td>
+            </tr>
+
+            <tr class="border-t border-gray-100 hover:bg-gray-50">
+              <td class="py-4 px-4">04 Jan 2025</td>
+              <td class="py-4 px-4">Sat</td>
+              <td class="py-4 px-4">-</td>
+              <td class="py-4 px-4">-</td>
+              <td class="py-4 px-4 text-red-600 font-medium">Absent</td>
+              <td class="py-4 px-4">-</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
